@@ -1,5 +1,5 @@
 <?php
-class CatMarca extends ConnDB
+class ClasseGenerica extends ConnDB
 {
     //Variável responsável por retornar o resultado de uma ação
     private $query;
@@ -11,22 +11,22 @@ class CatMarca extends ConnDB
         $this -> query -> execute($exec);
     }
 
-    public function selectCatMarca($campos,$prep,$exec)
+    public function selectClasseGenerica($campos,$prep,$exec)
     {
-        $this -> prepExec('SELECT '. $campos .' FROM cat_marca '. $prep .'', $exec);
+        $this -> prepExec('SELECT '. $campos .' FROM nome_tabela '. $prep .'', $exec);
         return $this -> query;
         //return $this -> query retornará o resultado da ação em um var_dump no objeto extanciado
     }
 
-    public function updateCatMarca($prep,$exec)
+    public function updateClasseGenerica($prep,$exec)
     {
-        $this -> prepExec('UPDATE cat_marca SET '. $prep .' ', $exec);
+        $this -> prepExec('UPDATE nome_tabela SET '. $prep .' ', $exec);
         return $this -> query;
     }
 
-    public function insertCatMarca($prep,$exec)
+    public function insertClasseGenerica($prep,$exec)
     {
-        $this -> prepExec('INSERT INTO cat_marca SET '. $prep .' ', $exec);
+        $this -> prepExec('INSERT INTO nome_tabela SET '. $prep .' ', $exec);
         return $this -> query;
     }
 }
