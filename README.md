@@ -1,7 +1,7 @@
 # Crude PHP
 Essas duas classes foram criadas para facilitar o CRUD em PHP
 
-para utilizar as classes inporte as classes no arquivo PHP:
+para utilizar as classes import as classes no arquivo PHP:
 
 ```
 require_once 'ConnDB.class.php';
